@@ -2,7 +2,7 @@ const weatherBtn = document.getElementById("weatherBtn")
 weatherBtn.addEventListener("click", async () => {
     let cityName = document.getElementById("city-name").value;
     const url = "https://comp-1537-lab9.onrender.com"
-    response = await fetch(`${url}/weather?city=${cityName}&units=metric`)
+    response = await fetch(`https://comp-1537-lab9.onrender.com/weather?city=${cityName}&units=metric`)
     responseJson = await response.json()
     console.log(responseJson);
     document.getElementById("result").innerHTML = `<div>${responseJson.weather[0].description}</div>`;
