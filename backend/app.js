@@ -9,13 +9,13 @@ app.listen(port, () => {
     console.log("example running on port 3000!")
 });
 
-app.get('/', (req, res) => {
-  res.sendFile("C:/Users/tmaru/OneDrive/BCIT_CST_Term1/COMP1537/lab9/lab9-weather-app-node-js-and-express-js-TatsunoriMarumo/frontend/index.html");
-});
+// app.get('/', (req, res) => {
+//   res.sendFile("C:/Users/tmaru/OneDrive/BCIT_CST_Term1/COMP1537/lab9/lab9-weather-app-node-js-and-express-js-TatsunoriMarumo/frontend/index.html");
+// });
 
-app.get('/index.js', (req, res) => {
-  res.sendFile('C:/Users/tmaru/OneDrive/BCIT_CST_Term1/COMP1537/lab9/lab9-weather-app-node-js-and-express-js-TatsunoriMarumo/frontend/index.js');
-});
+// app.get('/index.js', (req, res) => {
+//   res.sendFile('C:/Users/tmaru/OneDrive/BCIT_CST_Term1/COMP1537/lab9/lab9-weather-app-node-js-and-express-js-TatsunoriMarumo/frontend/index.js');
+// });
 
 app.get("/weather", async (req, res) => {
     console.log(req.query.city);
